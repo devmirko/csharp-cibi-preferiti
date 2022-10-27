@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Microsoft.VisualBasic;
 using System.ComponentModel;
 using System.Xml.Schema;
 
@@ -98,6 +99,68 @@ for (int i = 0; i < 10; i++){
 }
 
 Console.WriteLine("La somma dei numeri inseriti è: " + totalAdd);
+
+//Calcola la somma e la media dei numeri da 2 a 10.
+int[] numeri = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+int sum = 0;
+float average;
+
+for (int i = 0; i < numeri.Length; i++)
+{
+    //somma dei numeri
+    sum += numeri[i];
+
+}
+
+//media dei numeri
+average = sum / numeri.Length;
+
+Console.WriteLine("la somma dei numeri è " + sum);
+Console.WriteLine("la media dei numeri è " + average);
+
+
+// Il software chiede all’utente di inserire un numero. Se il numero inserito è pari,
+// stampa il numero, se è dispari, stampa il numero successivo
+int numberUser = Convert.ToInt16(Console.ReadLine());
+int nextNumber = numberUser + 1;
+
+if (numberUser % 2 == 0)
+{
+    Console.WriteLine(numberUser);
+}
+else {
+    Console.WriteLine(nextNumber);
+}
+
+//in un array sono contenuti i nomi degli invitati alla festa del grande Gatsby.
+//Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla
+//festa
+
+string[] invitatiFesta = { "paolo", "michele", "fabrizio", "gino", "lorenzo", "patrice" };
+
+string invitato = Console.ReadLine();
+
+int index = Array.IndexOf(invitatiFesta, invitato);
+
+if (index > -1)
+{
+    Console.WriteLine("{0} Sei stato invitato", invitato);
+}
+else
+{
+    Console.WriteLine("Non sei stato invitato");
+}
+
+
+//Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo
+//nell’array
+
+
+
+
+
+
+
 
 
 
