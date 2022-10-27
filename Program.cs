@@ -154,6 +154,31 @@ else
 
 //Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo
 //nell’array
+int[] arrayVuoto = new int[6];
+int index_ = 0;
+for (int i = 0; i < arrayVuoto.Length; i++)
+{
+    Console.WriteLine("Inserisci un numero");
+    int numero = Convert.ToInt16(Console.ReadLine());
+    if(numero % 2 != 0) {
+        arrayVuoto[index_] = numero;
+        index_++;
+    } 
+
+}
+
+//Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in
+//posizione dispari
+int[] numeriSomma = { 1, 2, 3, 4, 5, 6, 7, 8 };
+int sommaNum = 0;
+
+for (int i = 0; i < numeriSomma.Length; i += 2)
+{
+    sommaNum += numeriSomma[i];
+}
+
+Console.WriteLine("La somma è: " + sommaNum);
+
 
 
 
