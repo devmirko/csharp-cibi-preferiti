@@ -21,6 +21,18 @@ for (int index = 0; index < cibiPreferiti.Length; index++)
 Console.WriteLine("Il mio cibo top" + cibiPreferiti[0]);
 Console.WriteLine("Il mio cibo preferito ma non troppo" + cibiPreferiti[4]);
 
+//mezza classifica
+if (cibiPreferiti.Length % 2 == 0)
+// Array di lunghezza Pari
+{
+    Console.WriteLine("il cibo a metà classifica è: " + cibiPreferiti[(cibiPreferiti.Length / 2) - 1]);
+} else {
+    // Array di lunghezza Dispari
+    Console.WriteLine("Il cibo a metà classifica è: " + cibiPreferiti[cibiPreferiti.Length / 2]);
+
+}
+
+
 
 
 
