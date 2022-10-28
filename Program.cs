@@ -103,7 +103,7 @@ Console.WriteLine("La somma dei numeri inseriti è: " + totalAdd);
 //Calcola la somma e la media dei numeri da 2 a 10.
 int[] numeri = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 int sum = 0;
-float average;
+int average;
 
 for (int i = 0; i < numeri.Length; i++)
 {
@@ -178,6 +178,17 @@ for (int i = 0; i < numeriSomma.Length; i += 2)
 }
 
 Console.WriteLine("La somma è: " + sommaNum);
+
+//Crea un array vuoto e chiedi all’utente un numero da inserire nell’array.
+//Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la
+//somma degli elementi è minore di 50;
+int somma = 0;
+while (somma < 50)
+{
+    Console.WriteLine("Inserisci un numero");
+    somma += Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("La somma è: " + somma);
+}
 
 
 
